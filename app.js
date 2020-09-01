@@ -20,9 +20,10 @@ app.use(bodyParser.urlencoded({
 }));
 app.use('/certificate', certificate);
 app.use('/api/coordinators', coordinators);
-
 app.set('view engine', 'ejs');
 
+app.get('/', (req, res) => {
+    res.redirect('/certificate')
+})
 
-
-app.listen(process.env.PORT=3000, () => console.log('Server started @port 3000'))
+app.listen(process.env.PORT || 3000, () => console.log('Server started @port 3000'))
