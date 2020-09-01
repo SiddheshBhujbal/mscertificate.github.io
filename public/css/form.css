@@ -21,6 +21,10 @@ body {
       margin-right: 0;
   
     }
+
+    form{
+      width: 90%;
+    }
   }
   body section h1 {
     margin-bottom: 40px;
@@ -123,6 +127,9 @@ body {
   @media(max-width:800px){
     form .field:hover label{
       color: transparent
+    }
+    form{
+      width: 90%;
     }
   }
   form input[type="submit"] {
