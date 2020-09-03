@@ -7,7 +7,7 @@ const JIMP = require('jimp');
 
 
 router.get('/', async (req, res) => {
-    await res.render('form')
+    await res.render('oldForm')
 })
 
 router.post('/getCertificate', async (req, res) => {
